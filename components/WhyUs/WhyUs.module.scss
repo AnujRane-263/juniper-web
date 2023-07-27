@@ -1,0 +1,90 @@
+@import "/styles/variables.scss";
+
+.container {
+  background-color: #fafafa;
+
+  .wrapper {
+    margin: 0 auto;
+    padding: 5rem 0 7rem;
+    @media (max-width: $mobileResolution) {
+    padding: 5rem 0 1.5rem;
+    }
+
+    h2 {
+      padding: 0.5rem 0 0;
+    }
+  }
+  .card {
+    display: flex;
+    background: #fff;
+    margin: 5rem 0 2rem;
+    @media (max-width: $mobileResolution) {
+      display: block;
+      margin: 5rem 0 0.5rem;
+    }
+    .leftWrap {
+      padding: 0 1.5625rem;
+      width: 34%;
+      @media (max-width: $mobileResolution) {
+        width: unset;
+        margin-bottom: 4rem;
+      }
+
+      > div {
+        padding: 2.25rem 0;
+      }
+      h4 {
+        padding: 0 0 2.5rem;
+      }
+
+      
+    }
+    .rightWrap {
+      width: 69%;
+      @media (max-width: $mobileResolution) {
+        width: unset;
+      }
+      .thumbnail {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .cardWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0 0;
+    @media (max-width: $mobileResolution) {
+      display: block;
+    }
+    .blogCard {
+      padding: 0 1.44rem;
+      width: 31.4%;
+      background-color: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.125);
+      border-radius: 6px;
+      word-wrap: break-word;
+      @media (max-width: $mobileResolution) {
+        width: unset;
+        margin: 0 0 1rem;
+      }
+
+      .heading {
+        font-size: 0.8125em;
+        padding: 2rem 0;
+      }
+      h4 {
+        padding: 0 0 3rem;
+        @media (max-width: $mobileResolution) {
+          padding: 0 0 1rem;
+        }
+      }
+      .date {
+        padding: 0.5rem 0 3.7rem;
+        @media (max-width: $mobileResolution) {
+          padding: 0 0 2rem;
+        }
+      }
+    }
+  }
+}

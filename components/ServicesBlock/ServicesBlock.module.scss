@@ -1,0 +1,109 @@
+@import "/styles/variables.scss";
+
+.container {
+  margin: 0 auto;
+  .card {
+    display: flex;
+    height: 27.5063rem;
+    position: relative;
+    border: 0.5px solid #b5b8b9;
+    background-color: #fff;
+    margin: 0 0 3.4375rem;
+    @media (max-width: $mobileResolution) {
+      flex-wrap: wrap;
+      height: auto;
+    }
+
+    .leftWrap {
+      padding: 0 0 0 2rem;
+      width: 50%;
+      @media (max-width: $mobileResolution) {
+        width: unset;
+      }
+      .heading {
+        padding: 2.5625rem 0 0;
+        font-weight: 400;
+        @media (max-width: $mobileResolution) {
+          padding: 1.25rem 0 0 ;
+        }
+      }
+      .tag {
+        padding-top: 1.25rem;
+        @media (max-width: $mobileResolution) {
+        padding: 1.25rem 2rem 0 0 ;
+        }
+        .tagline {
+          color: #000;
+          font-weight: 700;
+        }
+      }
+
+      .desc {
+        line-height: 1.44;
+        letter-spacing: -0.36px;
+        text-align: left;
+        color: #4d5259;
+        width: 80%;
+        @media (max-width: $mobileResolution) {
+        width: 90%;
+        margin-bottom: 3rem;
+        }
+
+      }
+      .btn {
+        position: absolute;
+        bottom: 41px;
+        @media (max-width: $mobileResolution) {
+        position: unset;
+        margin-bottom: 1rem;
+        }
+      }
+    }
+    .rightWrap {
+      position: relative;
+      .linkOverlay {
+        width: 75%;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: #fff;
+        z-index: 9999;
+        .heading {
+          padding: 1.5vw 1.5vw 0 2.3vw;
+          
+          .link {
+            font-size: 1em;
+            font-weight: 700;
+            text-decoration: none;
+            line-height: 33px;
+            color: #000 !important;
+            background: none;
+            letter-spacing: -0.16px;
+          }
+          .arrow {
+            padding-left: 10px;
+          }
+        }
+        .linkDesc {
+          padding: 0.5vw 1.5vw 2vw 2.3vw;
+          font-size: 1em;
+          color: #4d5259;
+          @media (max-width: $mobileResolution) {
+          font-size: 0.75em;
+          padding: 0.5vw 1.5vw 4vw 2.3vw;
+
+          }
+        }
+      }
+      .cardImg {
+        object-fit: cover;
+        width: 609px;
+        height: 438.6px;
+        @media (max-width: $mobileResolution) {
+          width:100%;
+          height: 270px;
+        }
+      }
+    }
+  }
+}

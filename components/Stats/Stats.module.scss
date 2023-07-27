@@ -1,0 +1,56 @@
+@import "/styles/variables.scss";
+.container {
+  margin: 8rem auto;
+  @media (max-width: $mobileResolution) {
+margin: 8rem auto 6rem;  
+}
+  .heading {
+    padding: unset;
+    padding: 0 0 1.75rem;
+  }
+  .cardsWrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $mobileResolution) {
+      display: block;
+    }
+
+    .card {
+      width: 30.8%;
+      @media (max-width: $mobileResolution) {
+        width: unset;
+      }
+      h3 {
+        color: #448500 !important;
+        line-height: 1.05;
+        letter-spacing: -1.26px;
+        font-size: 5em;
+        border-bottom: 1px solid #b5b8b9;
+
+        @media (max-width: $mobileResolution) {
+          padding: 0 0 0.5rem;
+          font-size: 3.25em;
+        }
+        .smallText {
+          font-size: 2.5rem;
+          color: #000 !important;
+          padding-left: 0.8rem;
+          @media (max-width: $mobileResolution) {
+            font-size: 1.625rem;
+            padding-left: 0.5rem;
+          }
+        }
+      }
+      p {
+        padding: 1rem 0 0.5rem;
+        font-size: 1em;
+        line-height: 1.44;
+        letter-spacing: -0.32px;
+      }
+      .desc {
+        padding: 0.5rem 0 1.25rem;
+      }
+    }
+  }
+}

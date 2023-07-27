@@ -1,0 +1,32 @@
+@import "/styles/variables.scss";
+.container {
+  margin: 10rem auto;
+  @media (max-width: $mobileResolution) {
+    margin: 3rem auto;
+  }
+  h1 {
+    padding-bottom: 1.5rem;
+  }
+  p {
+    padding: 1rem 0 2rem;
+    @media (max-width: $mobileResolution) {
+      font-size: 1em;
+    }
+  }
+  .clientsGrid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem 0 0;
+   
+
+    .clientLogo {
+      width: 160px;
+      @media (max-width: $mobileResolution) {
+        width: 140px;
+        padding: 1rem 0.5rem;
+      }
+    }
+  }
+}

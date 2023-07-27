@@ -1,0 +1,17 @@
+@import "/styles/variables.scss";
+
+.container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 99999;
+  .bottomBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #448500;
+    color: #fff;
+    font-size: 1.125em;
+    height: 54px;
+  }
+}

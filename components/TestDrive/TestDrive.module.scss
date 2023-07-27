@@ -1,0 +1,40 @@
+@import "/styles/variables.scss";
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10%;
+  margin: 6rem auto;
+  @media (max-width: $mobileResolution) {
+    flex-wrap: wrap;
+    margin: 4rem auto;
+  }
+  .leftWrap {
+    width: 50%;
+    .video {
+      width: 508px;
+      height: 315px;
+      @media (max-width: $mobileResolution) {
+        width: 322px;
+        height: 199px;
+      }
+    }
+  }
+  .rightWrap {
+    width: 50%;
+    @media (max-width: $mobileResolution) {
+      width: unset;
+    }
+    p {
+      width: 90%;
+      padding-bottom: 2.5rem;
+      @media (max-width: $mobileResolution) {
+        width: unset;
+      }
+    }
+    h2 {
+      padding: 2.2rem 0 1.5625rem;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+@import '/styles/variables.scss';
+
+.container{
+    background-color: #F0F3F5;
+    padding: 0 0 2rem ;
+    .wrapper{
+        margin: 0 auto;
+       
+        .tagline{
+            line-height: 1;
+            width: 70%;
+            margin-bottom: 5pc;
+            @media (max-width: $mobileResolution) {
+            width: unset;
+            margin-bottom: 4pc;
+            }
+        }
+    }
+   
+}

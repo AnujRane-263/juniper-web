@@ -1,0 +1,53 @@
+@import "/styles/variables.scss";
+
+.container {
+  margin: 6rem auto;
+  display: flex;
+  align-items: center;
+  gap: 8%;
+  @media (max-width: $mobileResolution) {
+    display: block;
+    margin: 0 auto;
+  }
+  .leftWrap {
+    width: 50%;
+    @media (max-width: $mobileResolution) {
+      width: unset;
+    }
+    .shopImg {
+      object-fit: cover;
+      width: 100%;
+      min-height: 850px;
+      @media (max-width: $mobileResolution) {
+        min-height: unset;
+      }
+    }
+  }
+  .rightWrap {
+    width: 50%;
+    @media (max-width: $mobileResolution) {
+      width: unset;
+    }
+    h2 {
+      padding: 3rem 0 0;
+      @media (max-width: $mobileResolution) {
+        font-size: 1.375em;
+      }
+    }
+    .authorName {
+      display: block;
+      width: 70%;
+      font-weight: 400;
+      font-size: 1em;
+      line-height: 1.44;
+      letter-spacing: -0.32px;
+      color: #4d5259;
+      margin: 2rem 0 5rem;
+      @media (max-width: $mobileResolution) {
+        font-size: 0.875em;
+        width: 100%;
+        margin: 2rem 0 3rem;
+      }
+    }
+  }
+}

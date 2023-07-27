@@ -1,0 +1,105 @@
+@import "/styles/variables.scss";
+.container {
+  background-color: #f0f3f5;
+  .wrapper {
+    margin: 0 auto;
+    .block {
+      padding: 2.1875rem 0;
+      :nth-child(1) {
+        padding-top: 1rem;
+      }
+      .smallText {
+        font-size: 0.625em;
+        margin: 0 0 1rem;
+        font-style: italic;
+      }
+    }
+  }
+  .footer {
+    padding: 5rem 0;
+    background: #000;
+    .collapse {
+      display: none;
+      @media (max-width: $mobileResolution) {
+        display: block;
+      }
+    }
+    .footerWrapper {
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      @media (max-width: $mobileResolution) {
+        display: block;
+      }
+
+      .leftWrap {
+        width: 21.5%;
+      }
+
+      ul {
+        padding: 0;
+        margin: 0 0 0.3125rem;
+        list-style: none;
+        li {
+          font-size: 1em;
+          a {
+            color: #b5b8b9;
+          }
+        }
+      }
+      .footerHide {
+        @media (max-width: $mobileResolution) {
+          display: none;
+        }
+      }
+    }
+    .socials {
+      margin: 0 auto;
+      padding: 0 0 4.625rem;
+      p {
+        line-height: 26px;
+        letter-spacing: -0.36px;
+        color: #f0f3f5 !important;
+        margin: 1.5rem 0;
+      }
+
+      .link {
+        font-size: 1.2em;
+        color: #fff;
+        padding-right: 2rem;
+        &:hover{
+          color: #437c0d;
+        }
+      }
+    }
+    .border {
+      border-bottom: solid 1px rgba(77, 82, 89, 0.6);
+      @media (max-width: $mobileResolution) {
+        display: none;
+      }
+    }
+    .copyrightsData {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      padding: 1.1875rem 0 0;
+      @media (max-width: $mobileResolution) {
+      display: block;
+      >div{
+        margin: 1.5rem auto;
+      }
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      p,
+      a,
+      li {
+        color: #b5b8b9;
+        font-size: 0.875em;
+        margin: 0 0 0.625rem;
+      }
+    }
+  }
+}

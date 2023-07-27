@@ -1,0 +1,137 @@
+@import "/styles/variables.scss";
+.container {
+  margin: 0 auto;
+  padding: 0 0 0 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: $mobileResolution) {
+    padding: 0 1.5rem;
+  }
+
+  .newUl {
+    display: flex;
+    align-items: center;
+    .logo {
+      width: 108px;
+      height: 28px;
+      @media (max-width: $mobileResolution) {
+        width: 80px;
+        height: 22px;
+      }
+    }
+
+    .nav1 {
+      margin-left: 2rem;
+      @media (max-width: $mobileResolution) {
+        display: none;
+      }
+      .nav1Link {
+        padding: 20px 0;
+      }
+      a {
+        padding: 20px 1pc;
+        text-transform: capitalize;
+        color: #333333;
+        font-size: 1em;
+        cursor: pointer;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: #000;
+          transition: all 0.5s;
+          height: 2px;
+          width: 0;
+          bottom: 1rem;
+          left: -0.0625rem;
+        }
+        &:hover::after {
+          width: 101%;
+          transition: all 0.5s;
+        }
+        &:nth-child(3):hover::after {
+          width: 78%;
+        }
+      }
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      li {
+        list-style: none;
+      }
+    }
+    .icon {
+      padding: 20px 1.2pc;
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+  .navRight {
+    .nav2 {
+      @media (max-width: $mobileResolution) {
+        display: none;
+      }
+      a {
+        padding: 20px 1pc;
+        text-transform: capitalize;
+        color: #333333;
+        font-size: 1em;
+        cursor: pointer;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          background-color: #000;
+          transition: all 0.5s;
+          height: 2px;
+          width: 0;
+          bottom: 1rem;
+          left: 0.9375rem;
+        }
+        &:hover::after {
+          width: 65%;
+          transition: all 0.5s;
+        }
+        &:nth-child(3):hover::after {
+          width: 78%;
+        }
+      }
+    }
+  }
+
+  .searchBtn {
+    background: #fff;
+    color: #000;
+    font-size: 2em;
+    line-height: 1.12;
+    padding: 1.21rem 1.85rem;
+    font-weight: 700;
+    border: unset;
+    outline: unset;
+    @media (max-width: $mobileResolution) {
+      font-size: 1.4em;
+      padding: 1rem 1.5rem;
+    }
+    &:hover {
+      background: #000;
+      color: #fff !important;
+      @media (max-width: $mobileResolution) {
+        background: unset;
+
+        color: #000 !important;
+      }
+    }
+  }
+  .hamBurgerMenu {
+    display: none;
+    @media (max-width: $mobileResolution) {
+      display: block;
+    }
+  }
+}

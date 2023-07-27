@@ -1,0 +1,59 @@
+@import "/styles/variables.scss";
+
+.container {
+
+  h1 {
+    padding: 6.4375rem 0 0;
+    @media (max-width: $mobileResolution) {
+    padding: unset;
+    }
+  }
+  p {
+    margin: 3rem 0 4rem;
+    @media (max-width: $mobileResolution) {
+    margin: 2rem 0 1rem;
+    }
+  }
+
+  .slides {
+    padding-left: 10vw;
+    @media (max-width: $mobileResolution) {
+    padding: 2rem 2rem 4.375rem;
+    }
+    overflow: hidden;
+    .banner {
+      display: none;
+      gap: 10%;
+    }
+   
+  
+  }
+  .toggleTab{
+    width: 90%;
+    padding-left: 10vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f1f2f1;
+    color: #888D90;
+    margin: 1rem  0 8rem;
+    @media (max-width: $mobileResolution) {
+    display: none;
+    }
+
+.btnOne{
+  width: 32.8%;
+  min-height: 180px;
+  .num{
+    padding: 1.875rem 0 12px;
+    font-size: 1.625em;
+  }
+  .p{
+    padding: 0 0 2.1875rem;
+    margin: 0 !important;
+  }
+
+ 
+}
+   
+  }
+}

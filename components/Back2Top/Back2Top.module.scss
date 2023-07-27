@@ -1,0 +1,14 @@
+@import "/styles/variables.scss";
+.container{
+    margin: 0 auto 2rem;
+    button{
+        border: unset;
+        background-color: transparent;
+        font-size: 1.25em;
+        font-weight: 700;
+      i{
+        padding-left: 1rem;
+      }
+    }
+   
+}
